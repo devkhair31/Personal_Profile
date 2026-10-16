@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+    <style>
+        *{margin:0; padding:0;}
+        .container{
+            max-width: 1100px;
+            margin: auto;
+        }
+        
+        h1,h2,p{margin-bottom: 10px;}
+        h1{color:blue;}
+        h2{color:green;}
+        p{font-size: 20px; text-align: justify;}
+        ul{ list-style-type: none; }
+        a{text-decoration: none;}
+        li{float: left;}
+        label{
+            font-weight: bold;
+        }
+
+        header::after{
+            content:"";
+            clear: both;
+            display: table;
+        }
+        th,td{
+            text-align: center;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        th{
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header style="margin-bottom: 10px; background-color: green; padding:20px;">
+        <nav>
+            <ul>
+                <li style="margin-left:10px;"><a style="font-size: 18px; color:white;text-transform: uppercase;" href="#">Home</a></li>
+                <li style="margin-left:10px;"><a style="font-size: 18px; color:white;text-transform: uppercase;" href="#">About Me</a></li>
+                <li style="margin-left:10px;"><a style="font-size: 18px; color:white;text-transform: uppercase;" href="#">Services</a></li>
+                <li style="margin-left:10px;"><a style="font-size: 18px; color:white;text-transform: uppercase;" href="#">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main style="padding: 15px;">
+            <h1 style="text-decoration:underline; text-align: center;">My Personal Profile</h1>
+            <p style="text-align: center;"><img src="photo.jpg" alt="my_photo" width="200" height="200" style="border-radius: 50%; border: 1px solid black;"></p>
+            <p style="text-align: left;">Let's start with my favourite song: <audio controls>
+                <source src="mysong.mp3" type="audio/mp3">
+            </audio></p>
+            <p>Hello, My name is <b>Mohammad Abul Khair</b>, I am a <i>Web Designer & Developer</i> and also <mark>expert in Python</mark>. I have an excellent experience with over 3+ years in Web Designing and Developing.  My focus is to build a website with user-friendly and also attractive.</p>
+            <p>My skill is basically <i>Web Design, Custom Web Development.</i> I always make sure to build a quality service and also clients satisfaction. </p>
+            <p>I have a strong passion for the creativity and discipline that goes into front-end development. Keeping in mind scalability and clean code that is maintainable and you can not hope to get this without the best and skilled web designer and developer.</p>
+            <p>I believe in building a long term relationship by delivering quality work. So feel free to ask me any types of queries . Let’s connect! 🤗</p>
+            <p>Email: kkhair31@gmail.com <br> Mobile: +8801714338891 (WhatsApp)</p>
+        </main>
+        <section style="padding: 15px;">
+            <h2>Here is my academic qualification:</h2>
+            <table style="border-collapse: collapse;">
+                <thead>
+                    <th>No</th>
+                    <th>Name of Exam</th>
+                    <th>School Name</th>
+                    <th>Year of Passing</th>
+                    <th>Division</th>
+                    <th>Borad/University</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>SSC</td>
+                        <td>Damudya Muslim High School</td>
+                        <td>1993</td>
+                        <td>First</td>
+                        <td>Dhaka</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>HSC</td>
+                        <td>Syed Abul Hossain College</td>
+                        <td>1995</td>
+                        <td>First</td>
+                        <td>Dhaka</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Degree</td>
+                        <td>Dhaka College</td>
+                        <td>1999</td>
+                        <td>Third</td>
+                        <td>National University</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section style="padding: 15px;">
+            <h2>Here is my submition form</h2>
+            <form action="">
+                <div style="margin-bottom: 10px;">
+                    <label for="name">Name :</label>
+                    <input style="padding:5px 0px 5px 5px; border-radius: 5px; border: 1px solid green;" type="text" placeholder="Write Your Name">
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label for="email">Email :</label>
+                    <input style="padding:5px 0px 5px 5px; border-radius: 5px; border: 1px solid green;" type="text" placeholder="Write Your Email">
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label for="password">Password :</label>
+                    <input style="padding:5px 0px 5px 5px; border-radius: 5px; border: 1px solid green;" type="password" placeholder="Write Your Password">
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label>Gender :</label>
+                    <input type="radio" name="gender"><span style="margin-left: 10px;">Male</span>
+                    <input type="radio" name="gender"><span style="margin-left: 10px;">Female</span>
+                    <input type="radio" name="gender"><span style="margin-left: 10px;">Other</span>
+                </div>
+                <div  style="margin-bottom: 10px;">
+                    <label>Choose Your Hobbies :</label>
+                    <input type="checkbox"><span style="margin-left: 10px;">Cricket</span>
+                    <input type="checkbox"><span style="margin-left: 10px;">Cheese</span>
+                    <input type="checkbox"><span style="margin-left: 10px;">Football</span>
+                </div>
+                <button type="submit" style="padding: 10px 20px 10px 20px; background-color: green; color: white; font-size: 18px; border: none; border-radius: 5px;">Submit</button>
+            </form>
+            <br>
+            <p>Now let's play a favourite video song: </p>
+            
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/gWLTujAcDQc" title="Andrew Kishor পদ্ম পাতার পানি নয়- Poddo patar pani noy - Video Song"></iframe>
+            
+            <details>
+                <summary>Click here to know more information about me. </summary>
+                <p>Now I've been working as a Data Entry Operator at Upazila Primary Education Training Center, Damudya, Shariatpur under Government of Bangladesh since 2003. This long-term experience has helped me become highly skilled in computer operations, digital documentation, and providing reliable IT support with professionalism and accuracy.</p>
+            </details>
+        </section>
+    </div>
+    <footer style="background-color: green; padding: 20px; color:white; text-align: center; font-size: 20px;">
+        &copy;2026 All Rights reaserved by Mohammad Abul Khair
+    </footer>
+</body>
+</html>
